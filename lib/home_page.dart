@@ -12,16 +12,16 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromRGBO(52, 78, 92, 1),
-      bottomNavigationBar: BottomAppBar(
-        color: Color.fromRGBO(249, 89, 0, 1),
-        child: Container(
-          child: MaterialButton(
-            onPressed: () {
-              print('wer');
-            },
-          ),
-        ),
-      ),
-    );
+      body: Center(
+        child: Row(
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.Only(left: 10, right: 10, top: 15),
+              
+            ),
+          ], //<widget>
+        ), //row
+      ), //center
+    ); // scaffold
   }
 }
